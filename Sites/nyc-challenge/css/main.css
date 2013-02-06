@@ -1,0 +1,82 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+#resumeimg{
+    margin: 6px;
+}
+
+#landingheader
+{     
+    left:161px;
+    position:relative;
+    margin: 7px;
+} 
+
+#landingtxt1
+{     
+    left:37px;
+    position:relative;
+    margin: 7px;
+} 
+
+#landingtxt2
+{ 
+    left:346px;
+	position:relative;
+	margin: 3px;
+} 
+
+#landinglink
+{
+    left:426px;
+    position:relative;
+    margin-top: 5px;
+} 
+
+#landinghero
+{
+    margin:75px; 
+    z-index:=0;
+
+} 
+
+#landinglogo
+{
+	margin: 10px;
+	z-index:=+1;
+	left:240px;
+	position:relative;
+} 
+
+#imgtxt
+{
+    border:20px;
+} 
+
+#body 
+{
+    background-color:#F0FFFF;
+} 
+
+#para
+{
+	margin-top: 20px;
+}
+
+#crack
+{
+	padding: 8px;
+}
+
+#header1
+{
+	margin-bottom: 15px;
+}

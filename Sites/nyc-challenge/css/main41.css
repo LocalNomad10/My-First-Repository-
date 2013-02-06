@@ -1,0 +1,75 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+  background-color:;
+}
+
+.maincontent{
+  width: 700px;
+  border: 5px;
+  float: right
+}
+
+.sidecontent{
+  width: 200px;
+  border:5px;
+  float:left 
+}
+
+
+#body{
+    background-color:#F5F5DC;
+}
+
+#navbar{
+    display:inline-block;
+    width:60px; 
+}
+
+#navlist{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+
+.newspaper{
+-moz-column-count:3; /* Firefox */
+-webkit-column-count:3; /* Safari and Chrome */
+column-count:3;
+padding-left: 90px;
+padding-right: 90px;
+padding-top: 20px;
+padding-bottom: 25px;
+}
+
+.titles{
+  font:italic bold 70px/30px Georgia, serif;
+  padding-left: 225px;
+}
+.paragraph{
+  padding-left: 85px;
+  font:18px/30px Times New Roman, times;
+}
+.heading{
+  padding-left: 85px;
+  font: italic bold 30px/30px Times New Roman, times;
+}
+.sidetext{
+  font:italic bold 32px/30px Georgia, serif;
+}
+.sidetitles{
+  font:italic bold  16px serif;
+}

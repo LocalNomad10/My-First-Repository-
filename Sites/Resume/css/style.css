@@ -1,0 +1,63 @@
+/*
+HTML ELements
+*/
+body{
+	box-shadow:auto
+}
+small{
+	font:italic 20px/30px Georgia;
+}
+strong{
+	font:bold 50px/30px Georgia;
+}
+/*
+IDz
+*/
+#hellotitle{
+	font:italic bold 28px/30px Georgia, serif;	
+	color:#C71585;
+}
+#hello1{
+	font:italic bold 32px/30px serif;	
+}
+#hello2{
+	font:bold 32px/30px Georgia, sans-serif;	
+}
+#hello3{
+	color:#B22222;
+	font:italic  32px/30px Georgia, serif;	
+}
+#hello4{
+	font:italic bold 32px/30px Times, serif;	
+}
+#hello5{
+	font: 32px/30px Georgia, serif;	
+}
+#hello6{
+	font:italic bold 32px/30px Times, serif;
+	color:#B22222;
+}
+#hello7{
+	font:italic  32px/30px Georgia, serif;	
+}
+#hello8{
+	font:italic bold 32px/30px Times New Roman, serif;	
+}
+#hello9{
+	font:32px/30px Helvetica, serif;	
+	color:#708090;
+}
+#hello10{
+	font:italic bold 32px/30px Ariel, serif;	
+}
+#hello11{
+	font:italic bold 32px/30px Georgia, serif;	
+	color:#87CEEB;
+}
+/*
+Class-Classes
+*/
+.text-warning{
+	font:bold 32px/30px Georgia;
+	color:#B22222;
+}
