@@ -1,0 +1,15 @@
+{
+    "contents" : "#\n# 1_load.R - loads Twitter data, Hu & Liu's opinion lexicon, and the ACSI scores from disk\n#\n#\t\t\t scrape.R should be run once to collect and cache tweets before running this script.\n#\n\nif (!file.exists(file.path(dataDir, 'american.tweets.RData' )) )\n{\n\tstop(\"Tweets not found on disk -- source('R/scrape.R') to scrape Twitter first\")\n\n} else {\n\n\tif (VERBOSE)\n\t\tprint(\"Loading tweets from disk:\")\n\t\n\tprint( load( file.path(dataDir, 'american.tweets.RData' ) ) )\n\tprint( load( file.path(dataDir, 'delta.tweets.RData' ) ) )\n\tprint( load( file.path(dataDir, 'jetblue.tweets.RData' ) ) )\n\tprint( load( file.path(dataDir, 'southwest.tweets.RData' ) ) )\n\tprint( load( file.path(dataDir, 'united.tweets.RData' ) ) )\n\tprint( load( file.path(dataDir, 'us.tweets.RData' ) ) )\n}\n\n\nif (VERBOSE)\n\tprint(\"Loading Hu & Liu opinion lexicon\")\n\nhu.liu.pos = scan(file.path(dataDir, 'opinion-lexicon-English', 'positive-words.txt'), what='character', comment.char=';')\nhu.liu.neg = scan(file.path(dataDir, 'opinion-lexicon-English', 'negative-words.txt'), what='character', comment.char=';')\n\n# add a few twitter and industry favorites\npos.words = c(hu.liu.pos, 'upgrade')\nneg.words = c(hu.liu.neg, 'wtf', 'wait', 'waiting', 'epicfail', 'mechanical')\n\n\nif (VERBOSE)\n\tprint(\"Loading ACSI airline scores\")\n\nprint( load( file.path(dataDir, 'acsi.df.RData')) )\n",
+    "created" : 1360127208068.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3675828784",
+    "id" : "32685BCC",
+    "lastKnownWriteTime" : 1310526416,
+    "path" : "~/Desktop/informaticsrepo/Evidene_Based_Project_Repo /JB Tutorial/R/1_load.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

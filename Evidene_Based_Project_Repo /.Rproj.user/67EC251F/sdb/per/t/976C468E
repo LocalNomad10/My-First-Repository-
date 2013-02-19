@@ -1,0 +1,15 @@
+{
+    "contents" : "#\n# 0_start.R - set environment variables specifying path locations,\n#\t\t\t  load prerequistive libraries and our \n#\t\t\t  score.sentiment() function from sentiment.R\n#\n\n\n# assumes we started R in the project's home directory\n# or used setwd() to get there:\n\nprojectDir = getwd()\n\ncodeDir = file.path(projectDir, 'R')\ndataDir = file.path(projectDir, 'data')\noutputDir = file.path(projectDir, 'output')\n\nVERBOSE=TRUE\n\nif (VERBOSE)\n\tprint(\"Loading libraries and functions for project\")\n\nlibrary(twitteR)\nlibrary(plyr)\nlibrary(ggplot2)\n\n# load our score.sentiment() function:\nsource( file.path(codeDir, 'sentiment.R') )\n",
+    "created" : 1360127203234.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2393405820",
+    "id" : "976C468E",
+    "lastKnownWriteTime" : 1310526416,
+    "path" : "~/Desktop/informaticsrepo/Evidene_Based_Project_Repo /JB Tutorial/R/0_start.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

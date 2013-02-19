@@ -1,3 +1,4 @@
+
 ##Step-by-step script guide how to mine info from a twitter user
 ##From http://www.inside-r.org/howto/mining-twitter-airline-consumer-sentiment?##mkt_tok=3RkMMJWWfF9wsRoku6zLZKXonjHpfsX/##7OgtWaOg38431UFwdcjKPmjr1YIBTcp0dvycMRAVFZl5nR5dDO%2BZaZRJ9fteBEyiTS/2jqY%3D
 
@@ -52,9 +53,9 @@ class(kuraitis.tweets)
 ##Scan both documents in order to score text
 ##the below objects make simple character vectors
 ##load lexicons into R-studio
-hu.liu.pos = scan('/Users/jonathanschaller/Desktop/informaticsrepo/Evidene_Based_Project_Repo\ /opinion-lexicon-English/positive-words.txt', what='character',comment.char';')
+hu.liu.pos = scan('/Users/jonathanschaller/Desktop/informaticsrepo/Evidene_Based_Project_Repo\ /opinion-lexicon-English/positive-words.txt', what='character',comment.char=';')
 
-hu.liu.neg = scan('/Users/jonathanschaller/Desktop/informaticsrepo/Evidene_Based_Project_Repo\ /opinion-lexicon-English/negative-words.txt', what='character',comment.char';')
+hu.liu.neg = scan('/Users/jonathanschaller/Desktop/informaticsrepo/Evidene_Based_Project_Repo\ /opinion-lexicon-English/negative-words.txt', what='character',comment.char=';')
 
 ##Run a couple checks
 class(hu.liu.neg)

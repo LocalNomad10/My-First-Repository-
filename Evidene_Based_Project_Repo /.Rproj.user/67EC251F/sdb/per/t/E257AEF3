@@ -1,0 +1,15 @@
+{
+    "contents" : "#' \n#' score.sentiment() implements a very simple algorithm to estimate\n#' sentiment, assigning a integer score by subtracting the number \n#' of occurrences of negative words from that of positive words.\n#' \n#' @param sentences vector of text to score\n#' @param pos.words vector of words of postive sentiment\n#' @param neg.words vector of words of negative sentiment\n#' @param .progress passed to <code>laply()</code> to control of progress bar.\n#' @returnType data.frame\n#' @return data.frame of text and corresponding sentiment scores\n#' @author Jefrey Breen <jbreen@cambridge.aero>\nscore.sentiment = function(sentences, pos.words, neg.words, .progress='none')\n{\n\trequire(plyr)\n\trequire(stringr)\n\t\n\t# we got a vector of sentences. plyr will handle a list or a vector as an \"l\" for us\n\t# we want a simple array of scores back, so we use \"l\" + \"a\" + \"ply\" = laply:\n\tscores = laply(sentences, function(sentence, pos.words, neg.words) {\n\t\t\n\t\t# clean up sentences with R's regex-driven global substitute, gsub():\n\t\tsentence = gsub('[[:punct:]]', '', sentence)\n\t\tsentence = gsub('[[:cntrl:]]', '', sentence)\n\t\tsentence = gsub('\\\\d+', '', sentence)\n\t\t# and convert to lower case:\n\t\tsentence = tolower(sentence)\n\n\t\t# split into words. str_split is in the stringr package\n\t\tword.list = str_split(sentence, '\\\\s+')\n\t\t# sometimes a list() is one level of hierarchy too much\n\t\twords = unlist(word.list)\n\n\t\t# compare our words to the dictionaries of positive & negative terms\n\t\tpos.matches = match(words, pos.words)\n\t\tneg.matches = match(words, neg.words)\n\t\n\t\t# match() returns the position of the matched term or NA\n\t\t# we just want a TRUE/FALSE:\n\t\tpos.matches = !is.na(pos.matches)\n\t\tneg.matches = !is.na(neg.matches)\n\n\t\t# and conveniently enough, TRUE/FALSE will be treated as 1/0 by sum():\n\t\tscore = sum(pos.matches) - sum(neg.matches)\n\n\t\treturn(score)\n\t}, pos.words, neg.words, .progress=.progress )\n\n\tscores.df = data.frame(score=scores, text=sentences)\n\treturn(scores.df)\n}\n",
+    "created" : 1360127234537.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3915782816",
+    "id" : "E257AEF3",
+    "lastKnownWriteTime" : 1310526416,
+    "path" : "~/Desktop/informaticsrepo/Evidene_Based_Project_Repo /JB Tutorial/R/sentiment.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
