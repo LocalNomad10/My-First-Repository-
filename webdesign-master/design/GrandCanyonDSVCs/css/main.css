@@ -1,0 +1,30 @@
+/* custom elements  */
+#title {
+	font-size:30px;
+	padding-left:300px;
+}
+
+#nav-top{
+	padding-left:300px;
+}
+
+#nav-bottom{
+	padding-left:300px;
+}
+
+#intro{
+	position:relative;
+	top:10px;
+	left:435px;
+}
+#intro-2{
+	position:relative;
+	top:5px;
+	left:435px;
+}
+
+#img-1{
+	position:relative;
+	top:5px;
+	right:435px;
+}

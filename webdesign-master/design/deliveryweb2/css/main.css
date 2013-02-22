@@ -1,0 +1,384 @@
+/* 
+*
+* Main front-end framework
+*
+*  2013 
+*
+*
+* 
+* 
+*
+*/
+
+/*
+
+*/
+
+/* main page elements  */	
+
+
+#top-bar{
+width:990px;
+height:7px;
+background-color:#0066CC;
+float:top;
+position:absolute;
+top:0px;
+right:0px;
+margin-top:10px;
+z-index:1000;
+}
+
+#left-bar{
+width:9px;
+height:930px;
+background-color:#0066CC;
+float:left;
+position:relative;
+top:0px;
+right:0px;
+left:200px;
+z-index:+1;
+}
+
+#right-bar{
+width:9px;
+height:930px;
+background-color:#0066CC;
+float:right;
+position:relative;
+top:0px;
+right:0px;
+z-index:-1;
+}
+
+#logo{
+	top:4px;
+	position:relative;
+	right:0px;
+	left:-110px;
+}
+
+
+#main-title{
+	font-size:28px;
+	top:0px;
+	position:relative;
+	right:0px;
+	left:-49px;
+}
+
+#title{
+	float:center;
+	position:absolute;
+	top:21px;
+	left:402px;
+	right:0px;
+	z-index:0;
+}
+
+#banner{
+	top:50px;
+	right:0px;
+	left:550px;
+	position:absolute;
+}
+
+#intro-1{
+	float:center;
+	top:55px;
+	right:0px;
+	left:265px;
+	position:absolute;
+	width:600px;
+}
+
+#banner-2{
+	top:50px;
+	right:0px;
+	left:550px;
+	position:absolute;
+}
+
+#title-2{
+	float:left;
+	position:absolute;
+	top:150px;
+	left:345px;
+	right:-345px;
+}
+
+#intro-2{
+	top:780px;
+	right:0px;
+	left:115px;
+	position:absolute;
+	width:700px;
+}
+
+#map{
+	float:left;
+	position:relative;
+	top:10px;
+	left:255px;
+	right:0px;
+	z-index:0;
+}
+
+#logistics{
+	
+	position:relative;
+	top:0px;
+	left:55px;
+	right:0px;
+	z-index:0;
+}
+
+#courier{
+	
+	position:relative;
+	top:80px;
+	left:0px;
+	right:0px;
+	z-index:0;
+}
+
+#warehousing{
+	
+	position:relative;
+	top:160px;
+	left:0px;
+	right:80px;
+	z-index:0;
+}
+
+#title-2{
+	float:left;
+	position:absolute;
+	top:630px;
+	left:329px;
+	right:0px;
+	z-index:0;
+}
+
+#intro-2{
+	top:670px;
+	right:0px;
+	left:215px;
+	position:absolute;
+	width:700px;
+}
+
+#container-1, .inner{	
+		margin:0 auto;
+		width:920px;
+		text-align:center;
+		position:relative;
+		top:-133px;
+		right:0px;
+		left:0px;
+		}
+/* Nav  */	
+
+.vertical_menu {
+border: 1px dotted blue;
+background-color: ;
+margin: 0px;
+padding: 0px;
+width:100px;
+}
+.vertical_menu li {
+list-style: none;
+margin: 0px;
+}
+.vertical_menu li a {
+text-decoration: none;
+color: black;
+}
+.vertical_menu li a:hover {
+text-decoration: underline;
+}
+
+/* about page elements  */
+
+#main-title-2{
+	font-size:28px;
+	top:-340px;
+	position:relative;
+	right:0px;
+	left:425px;
+}
+
+#title-a1{
+	float:left;
+	position:absolute;
+	top:-307px;
+	left:215px;
+	right:0px;
+	z-index:0;
+}
+
+#intro-1-a{
+	top:-280px;
+	right:0px;
+	left:220px;
+	position:absolute;
+	width:550px;
+}
+
+#title-a2{
+	float:left;
+	position:absolute;
+	top:-160px;
+	left:215px;
+	right:0px;
+	z-index:0;
+}
+
+#intro-1-b{
+	top:-130px;
+	right:0px;
+	left:220px;
+	position:absolute;
+	width:550px;
+}
+
+#title-a3{
+	float:left;
+	position:absolute;
+	top:55px;
+	left:215px;
+	right:0px;
+	z-index:0;
+}
+
+#intro-a-3{
+	top:90px;
+	right:0px;
+	left:220px;
+	position:absolute;
+	width:550px;
+}
+
+#title-a4{
+	float:left;
+	position:absolute;
+	top:220px;
+	left:215px;
+	right:0px;
+	z-index:0;
+}
+
+#intro-a-4{
+	top:254px;
+	right:0px;
+	left:220px;
+	position:absolute;
+	width:550px;
+}
+
+/* row 1  */
+#img1-a{
+	top:-124px;
+	right:0px;
+	left:220px;
+	position:absolute;
+	width:250px;
+}
+
+#img1-b{
+	top:-124px;
+	right:0px;
+	left:430px;
+	position:absolute;
+	width:250px;
+}
+
+#img1-c{
+	top:-124px;
+	right:0px;
+	left:630px;
+	position:absolute;
+	width:250px;
+}
+
+#row1-a{
+	top:-104px;
+	right:0px;
+	left:220px;
+	position:absolute;
+	width:250px;
+}
+
+#row1-b{
+	top:-104px;
+	right:0px;
+	left:430px;
+	position:absolute;
+	width:250px;
+}
+
+#row1-c{
+	top:-104px;
+	right:0px;
+	left:630px;
+	position:absolute;
+	width:250px;;
+}
+
+/* row 2 */
+
+#img2-a{
+	top:150px;
+	right:0px;
+	left:220px;
+	position:absolute;
+	width:250px;
+}
+#img2-b{
+	top:150px;
+	right:0px;
+	left:430px;
+	position:absolute;
+	width:250px;
+}
+#img2-c{
+	top:150px;
+	right:0px;
+	left:630px;
+	position:absolute;
+	width:250px;
+}
+#row2-a{
+	top:170px;
+	right:0px;
+	left:220px;
+	position:absolute;
+	width:550px;
+}
+#row2-b{
+	top:170px;
+	right:0px;
+	left:430px;
+	position:absolute;
+	width:550px;
+}
+#row2-c{
+	top:170px;
+	right:0px;
+	left:630px;
+	position:absolute;
+	width:550px;
+}
+
+/* lean modal*/
+#lean_overlay{
+		position: fixed;
+		z-index:100;
+		top: 0px;
+		left: 0px;
+		height:100%;
+		width:100%;
+		background: #000;
+		display: none;
+		}

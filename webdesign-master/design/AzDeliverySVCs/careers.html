@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Service</title>	
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />    
+	<meta name="keywords" content=""></meta>
+	<meta name="description" content=""></meta>
+	<meta http-equiv="imagetoolbar" content="no" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="css/easy.css" media="screen" />
+	<link rel="stylesheet" href="css/easyprint.css" media="print" />
+	<link rel="stylesheet" href="css/main.css" media="screen" />
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	<script type="text/javascript" src="js/easy.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" language="javascript"></script>
+	<script>
+	/* Superior Web Systems */
+	function displayHideBox(boxNumber)
+	{
+	if(document.getElementById("LightBox"+boxNumber).style.display=="none") {
+		document.getElementById("LightBox"+boxNumber).style.display="block";
+		document.getElementById("grayBG").style.display="block";
+	} else {
+		document.getElementById("LightBox"+boxNumber).style.display="none";
+		document.getElementById("grayBG").style.display="none";
+	}
+	}
+	</script>
+	
+</head>
+<body>
+<div id="container">
+<img id="logo" src="images/Arizona-Delivery-SVC.jpg" alt="Source Ninja Strikes back!" width="350" height="228">
+<div id="top-bar"></div>
+<div id="left-bar"></div>
+<div id="right-bar"></div>
+<div id="bottom-bar"></div>
+	<div id="header">
+		<ul id="nav-top">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">Company</a></li>
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">Contact</a></li>
+			<li><a href="#">Careers</a></li>
+		</ul>
+		
+	</div>
+	<style>
+		.grayBox{
+		position: fixed;
+		top: 0%;
+		left: 0%;
+		width: 100%;
+		height: 100%;
+		background-color: black;
+		z-index:1001;
+		-moz-opacity: 0.8;
+		opacity:.80;
+		filter: alpha(opacity=80);
+		}
+		.box_content {
+		position: fixed;
+		top: 25%;
+		left: 30%;
+		right: 30%;
+		width: 40%;
+		padding: 16px;
+		z-index:1002;
+		overflow: auto;
+		}
+	</style>
+
+	<div id="container">
+			<div id="grayBG" class="grayBox" style="display:none;"></div>
+			<div id="LightBox1" class="box_content" style="display:none;">
+				<table cellpadding="3" cellspacing="0" border="0"> <tr align="left">
+				<td colspan="2" bgcolor="#FFFFFF" style="padding:10px;"><div onclick="displayHideBox('1'); return false;" style="cursor:pointer;" align="right">X</div><p><!-- Box content -->Text of the box!!!</p></td>
+				</tr>
+				</table>
+			</div>
+			<a href="#" onclick="displayHideBox('1'); return false;">Open Box</a>
+			</div>	
+	<div id="footer">
+		
+	</div>
+
+</div>
+
+</body>
+</html>

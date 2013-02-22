@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
     <head>
         <title>Informatics Designs</title>
         <!-- Customer CSS Styles -->
-        <link href="css/mai.css" rel="stylesheet" media="screen">
+        <link href="css/main.css" rel="stylesheet" media="screen">
         <!--Bootstrap -->
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,14 +15,124 @@
          <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js"></script>
          <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script> 
         <!-- Add site or application content here -->    
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <a class="brand" href="index.html">Informatics Designs</a>
+                    <ul class="nav">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li class="divider-vertical"><a href="/resume.html">Resume</a></li>
+                        <li class="divider-vertical"><a href="/portfolio.html">Samples</a></li>
+                        <li class="divider-vertical"><a href="/blog.html">Blog</a></li>
+                    </ul>                 
+                </div>
+            </div>    
         <div class="container">
-               
-            
-            <div class="hero-unit" id="landinghero">
-            <div id="landinglogo"><img src="img/langingpage.png" alt="Pulpit rock" width="1000" ></div>
-               <a id="landinglink" href="/informatics.html">Enter</a> 
+            <div class="container-fluid">    
+                <div class="span12">
+                    <div class="span4"> <!--Sidebar content-->
+                        <h1 id="header1" > Design Better Design to Perform <h1>
+                                <!-- Button to trigger modal 4 -->
+                            <a href="#forceModal" role="button" class="btn btn-info" data-toggle="modal" id="crack"> Web Design </a>   
+                                <!-- Modal -->
+                            <div id="forceModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                                    <h3 id="myModalLabel"> Are you dissatisfied with a cluttered or generic website? </h3>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="lead"> A website is a great marketing and reporting tool. If you have a cause, business, or information that people need to see then a website is a highly effective reporting tool to reach a mass audience on a highly personal level. In that same vein if your website doesn't impact your audience on a personal level then your website will fail; even if it is technically perfect. Let me make a website for you that will reach the audience, and effect their perspective getting them on your side. </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-info" data-dismiss="modal" aria-hidden="true">Close</button>
+                                    <div class="item pull-left"><img src="img/graphic1.png" alt="Pulpit rock" width="54" height="228"></div>
+                                </div>
+                            </div>  <br>
+                                <!-- Button to trigger modal 1 -->
+                            <a href="#energyModal" role="button" class="btn btn-info" data-toggle="modal" id="crack">InfoGraphics and Data Visualization</a>   
+                                <!-- Modal -->
+                            <div id="energyModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="energyModal" aria-hidden="true">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                                    <h3 id="energyModal"> Does your chart not show your passion for analysis? </h3>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="lead"> Not everyone cares about numbers or processes. So how do you get those people interested in data without a hammer? Infographics and Diagrams are exciting ways to tell a data driven story. It will show the information in a way that speaks to multiple learning styles. The pictures will capture the visual learners and the numbers will tell the analytical side. I can build a beautiful data chart to express your passion for analysis so the audience will understand the point you want to make.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-info" data-dismiss="modal" aria-hidden="true">Close</button>
+                                    <div class="item pull-left"><img src="img/graphic1.png" alt="Pulpit rock" width="54" height="228"></div>
+                                </div>
+                            </div>   <br>                        
+                             <!-- Button to trigger modal 2 -->
+                            <a href="#motionModal" role="button" class="btn btn-info" data-toggle="modal" id="crack">Analytics</a>
+                            <!-- Modal -->
+                            <div id="motionModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                                    <h3 id="myModalLabel"> So you know you need analytics? But, which ones? </h3>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="lead"> Everyone wants to find a magic number that can desicribe to them the nature of a relationship. How did you feel when you learn learned the relationship about calories and weight? Maybe terrified! What if you want to improve performance, but your not sure how. Let me brainstorm a bounty of ideas in order to find out what key indicators may be missing from your organization. </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-info" data-dismiss="modal" aria-hidden="true">Close</button>
+                                    <div class="item pull-left"><img src="img/graphic1.png" alt="Pulpit rock" width="54" height="228"></div>
+                                </div>
+                            </div>  <br>                         
+                             <!-- Button to trigger modal 3 -->
+                            <a href="#socialmediaModal" role="button" class="btn btn-info" data-toggle="modal" id="crack">Social Media</a>
+                             <!-- Modal -->
+                            <div id="socialmediaModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                                    <h3 id="myModalLabel"> Maintaining a social media presence is Important. </h3>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="lead"> Social media is driving changes online. Make sure you are part of the living making the future instead of allowing it to pass you. Maybe you just want a great tag line. Give me a minute i'll come up with one. </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-info" data-dismiss="modal" aria-hidden="true">Close</button>
+                                    <div class="item pull-left"><img src="img/graphic1.png" alt="Pulpit rock" width="54" height="228"></div>
+                                </div>
+                            </div>  
+                            <br> 
+                            <!-- Button to trigger modal 3 -->
+                            <a href="#functionModal" role="button" class="btn btn-info" data-toggle="modal" id="crack">Information Management</a>     
+                                <!-- Modal -->
+                            <div id="functionModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                                    <h3 id="myModalLabel"> What the heck do I do with all this information? </h3>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="lead"> Failing to optimize data to yield information can cause defects in quality, delivery, and efficiency. A skilled information management system can improve those things for you if done correctly. There maybe weaknesses in your system you did not even know about. Let me access where your business or organization stands regarding information use. If there is a problem i'll find it and find a solution to address the root cause.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-info" data-dismiss="modal" aria-hidden="true">Close</button>
+                                    <div class="item pull-left"><img src="img/graphic1.png" alt="Pulpit rock" width="54" height="228"></div>
+                                </div>
+                            </div>                                        
+                            <p class="lead" id="para"> Too many designs lack a critical message embedded into their purpose. Designs are a solution meant to communicate something important
+                            to an audience. In short, designs needs to be easy to understand and create a lasting memory for the audience. Design is performance. 
+                            </p>        
+                        <h3>Samples</h3>
+                    </div> <!--Sidebar content-->
+                    <div class="span7"><!--Body content-->
+                        <div class="hero-unit">
+                        <div class="item"><img src="img/graphic1.png" alt="Pulpit rock" width="304" height="228"></div>
+                        <h1>Perfecting Design</h1>
+                        <h3 class="text-info">to create lasting brands.</h3><br>  
+                        </div>
+                    </div><!--Body content-->  
+                     <div class="container"><!-- footer and website demos -->
+                        <table class="container">   
+                         <td><img class="img-polaroid" src="img/active.png" width="270px"><a class="container">Active</a></td>
+                         <td><img class="img-polaroid" src="img/minimal.png" width="270px"><a class="container">Minmal</a></td>
+                         <td><img class="img-polaroid" src="img/modern.png" width="270px"><a class="container">Modern</a></td>
+                        </table>  
+                     </div>   
+                </div>             
             </div>
-            
         </div>    
         <!-- JavaScript -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>

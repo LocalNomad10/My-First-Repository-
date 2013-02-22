@@ -1,5 +1,6 @@
 # How to download csv file from webpage
 #url for kindle Comments
+#connect to data from scraper wiki
 #works
  fileUrl <-"https://api.scraperwiki.com/api/1.0/datastore/sqlite?format=csv&name=kindle_most_highlighted_passages_-_healthcare_1&query=select+*+from+%60swdata%60&apikey="
 > download.ffile(fileUrl, destfile="./data/kindle.csv", method="curl")
